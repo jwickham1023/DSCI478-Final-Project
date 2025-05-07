@@ -7,11 +7,12 @@ Revisiting and improving upon prior research is how we advance scientific unders
 * `paper.tex`: The paper as a TeX file, where a majority of the reworking was done due to the project submission's requirements
 * `paper.ipynb`: The paper as a Jupyter Notebook, where a majority of the tabular and graphiacal work was done to make the paper readable
 * `paper.pdf`: The paper as a PDF file
+* `proj.ipynb`: The project file taken from Colab
 * `test.hf.json`: A test dataset that was used in our project. All of the datasets would be too large for the repository
 * `model results/`: A folder containing all of the model results achieved in our project
 
 ## Note:
-This assignment was originally programmed on Google Colab using an A100 GPU to be able to complete the project in a reasonable amount of time. The project code is provided in the repository, but if you wish to run this yourself, good luck.
+This assignment was originally programmed on Google Colab using an A100 GPU to be able to actually compute our project. The project code is provided in the repository, but if you wish to run this yourself, good luck.
 
 ### References:
 * Chen, D., Bolton, J., & Manning, C. D. (2016). A thorough examination of the CNN/Daily Mail Reading Comprehension Task. Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). https://doi.org/10.18653/v1/p16-1223
