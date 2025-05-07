@@ -9,6 +9,7 @@ Revisiting and improving upon prior research is how we advance scientific unders
 * `paper.pdf`: The paper as a PDF file
 * `proj.ipynb`: The project file taken from Colab
 * `test.hf.json`: A test dataset that was used in our project. All of the datasets would be too large for the repository
+* `entity_filtering_summary.csv`: A summary of the dataset splits after preprocessing
 * `model results/`: A folder containing all of the model results achieved in our project
 
 ## Note:
