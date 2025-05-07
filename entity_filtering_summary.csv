@@ -1,0 +1,7 @@
+Dataset,Split,Raw Count,Filtered Count,Raw Min,Raw Max,Filtered Min,Filtered Max,Raw Mean,Filtered Mean,Raw Median,Filtered Median,Reduction (Mean),% Reduction (Mean)
+CNN,Train,80000,25256,1,527,5,30,26.39,6.48,23.0,6.0,19.9,75.43
+CNN,Validation,3924,1376,2,187,5,15,26.19,6.4,22.0,6.0,19.79,75.56
+CNN,Test,3198,1007,4,394,5,17,24.22,6.34,21.0,6.0,17.88,73.83
+DailyMail,Train,80000,16019,1,329,5,28,26.25,6.54,22.0,6.0,19.71,75.1
+DailyMail,Validation,64835,16424,1,230,5,29,25.02,6.5,21.0,6.0,18.52,74.02
+DailyMail,Test,53182,12731,1,245,5,24,25.48,6.47,21.0,6.0,19.01,74.61
