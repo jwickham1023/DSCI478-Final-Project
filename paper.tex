@@ -569,6 +569,7 @@ constraints on the transformer architecture.
 
     \section{Results}\label{results}
 
+\begin{samepage}
     During the training, there was a clear divide in each model's
 convergence characteristics. DistilBERT showed a rapid improvement in
 accuracy within the first thousand steps and increased over the
@@ -582,22 +583,15 @@ initialization provided a significant head start, where the GRU
 architecture training from scratch was limited by the limited
 cloze-style data it was provided, see figures 3 and 4 for final
 accuracy, training time, and hardware differences.
+\end{samepage}
+\newline{}
 
     \begin{samepage}
     \begin{center}
 		\textbf{Figure 3: Accuracy comparisons between GRU and DistilBERT}
     \adjustimage{max size={0.6\linewidth}{0.6\paperheight}}{paper_files/paper_17_0.png}
     \end{center}
-    \vspace{1em}
-\noindent\begin{minipage}{0.9\linewidth}
-\begin{scriptsize}
-\textbf{\textit{Figure description:}} \textit{As shown by the graphs, the DistilBERT models out-perform the original legacy models by a lot.}
-\end{scriptsize}
-\end{minipage}
-    \end{samepage}
-    { \hspace*{\fill} \\}
 
-\begin{samepage}
 	\begin{center}
 		\textbf{Figure 4: Table of performance and accuracies of GRU and DistilBERT}
 	\end{center}
@@ -617,11 +611,13 @@ DistilBERT & Daily Mail & 86.79\% & 1h 51m & Truncated input, A100 GPU \\
 \vspace{1em}
 \noindent\begin{minipage}{0.9\linewidth}
 \begin{scriptsize}
-\textbf{\textit{Figure description:}} \textit{DistilBERT, as shown in the table, achieves a much higher accuracy at the cost of using an A100 GPU, which an average consumer most likely won't have on hand.}
+\textbf{\textit{Figure descriptions:}} \textit{DistilBERT, as shown in both the table and the graph, achieves a much higher accuracy due to pretraining and having a smaller dataset to work with as well as dealing with smaller batch sizing, but at the cost of requiring more complicated preprocessing and intensive computational power, requiring an A100 GPU to be able to train the models.}
 \end{scriptsize}
 \end{minipage}
 \end{samepage}
+{ \hspace*{\fill} \\}
 
+\begin{samepage}
     Superior performance was achieved with DistilBERT in both datasets, but
 it came at significant tradeoffs. This model required high-end hardware,
 aggressive preprocessing, and exclusion of most of the dataset to meet
@@ -630,6 +626,7 @@ hardware, it had minimal processing and could use full-length article
 context. The GRU model was less accurate, but its ability to be used and
 its interpretability make it a consideration with limited resources or
 technical requirements
+\end{samepage}
 
     \section{Conclusion}\label{conclusion}
 
